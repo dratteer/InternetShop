@@ -1,6 +1,12 @@
+using Handlers.Base;
+using MediatR;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Mediator
+builder.Services.AddMediatR(typeof(RequestBase).Assembly);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

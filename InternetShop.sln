@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetShop", "InternetShop\InternetShop.csproj", "{1889E15D-0CF6-492B-862C-646B8F7A8332}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternetShop", "InternetShop\InternetShop.csproj", "{1889E15D-0CF6-492B-862C-646B8F7A8332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handlers", "Handlers\Handlers.csproj", "{79A3A143-0823-47C6-85E4-551739628304}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1889E15D-0CF6-492B-862C-646B8F7A8332}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1889E15D-0CF6-492B-862C-646B8F7A8332}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1889E15D-0CF6-492B-862C-646B8F7A8332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79A3A143-0823-47C6-85E4-551739628304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A3A143-0823-47C6-85E4-551739628304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A3A143-0823-47C6-85E4-551739628304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A3A143-0823-47C6-85E4-551739628304}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
