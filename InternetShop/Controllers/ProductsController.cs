@@ -26,5 +26,16 @@ namespace InternetShop.Controllers
 
             return response;
         }
+
+        [HttpGet("{id}/price")]
+        public async Task<ResponseBase> GetPrice(long id)
+        {
+            var response = await _mediator.Send(new GetPriceRequest
+            {
+                Id = id
+            });
+
+            return response;
+        }
     }
 }
