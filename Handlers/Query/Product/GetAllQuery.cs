@@ -7,22 +7,22 @@ using System.Threading.Tasks;
 
 namespace Handlers.Query.Product
 {
-    public class GetByIdQuery : HandlerBase<GetByIdRequest>
+
+    public class GetAllQuery : HandlerBase<GetAllRequest>
     {
         private readonly DataContext _dataContext;
 
-        public GetByIdQuery(DataContext dataContext) : base()
+        public GetAllQuery(DataContext dataContext) : base()
         {
-             _dataContext = dataContext;
+            _dataContext = dataContext;
         }
 
-        public override Task<ResponseBase> Handle(GetByIdRequest request, ResponseBase response)
+        public override Task<ResponseBase> Handle(GetAllRequest request, ResponseBase response)
         {
             var product = _dataContext
                .Products
-               .Include(t => t.BrandValue)
-               .SingleOrDefault(t => t.Id == request.Id);
-              
+               .Include(t => t.BrandValue);
+
             response.Result = product;
 
             return Task.FromResult(response);

@@ -4,11 +4,6 @@
 		<TargetFramework>net6.0</TargetFramework>
 	</PropertyGroup>
 
-	
-	<ItemGroup>
-    <Folder Include="Command\Product\" />
-  </ItemGroup>
-
 	<ItemGroup>
 		<PackageReference Include="MediatR" Version="9.0.0" />
 		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />

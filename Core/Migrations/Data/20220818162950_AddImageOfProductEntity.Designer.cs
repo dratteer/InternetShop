@@ -2,17 +2,19 @@
 using Core.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace Core.Migrations
+namespace Core.Migrations.Data
 {
     [DbContext(typeof(DataContextMigration))]
-    partial class DataContextMigrationModelSnapshot : ModelSnapshot
+    [Migration("20220818162950_AddImageOfProductEntity")]
+    partial class AddImageOfProductEntity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -7,6 +7,7 @@ namespace Core.Contexts
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Brand> Brands { get; set; }
+        public DbSet<ImageOfProduct> ImageOfProducts { get; set; }
 
         protected DataContext() { }
 

@@ -12,7 +12,11 @@ builder.Services.AddMediatR(typeof(RequestBase).Assembly);
 
 //DbContext
 var connection = builder.Configuration["ConnectionStrings:DefaultConnection"];
-builder.Services.AddDbContext<DataContext>(options => options.UseNpgsql(connection));
+builder.Services.AddDbContext<DataContext>(options => options
+    .UseNpgsql(connection)
+    .LogTo(Console.WriteLine)
+);
+
 builder.Services.AddTransient<DataContext, DataContext>();
 
 builder.Services.AddControllers();
