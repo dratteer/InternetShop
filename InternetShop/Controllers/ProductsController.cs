@@ -26,5 +26,24 @@ namespace InternetShop.Controllers
 
             return response;
         }
+
+        [HttpGet]
+        public async Task<ResponseBase> GetAll()
+        {
+            var response = await _mediator.Send(new GetAllRequest { });
+
+            return response;
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ResponseBase> Delete(long id)
+        {
+            var response = await _mediator.Send(new DeleteByIdRequest
+            {
+                Id = id
+            });
+
+            return response;
+        }
     }
 }

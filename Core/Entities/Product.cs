@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace Core.Entities
@@ -12,5 +13,7 @@ namespace Core.Entities
 
         [ForeignKey(nameof(BrandId))]
         public Brand BrandValue { get; set; }
+
+        public List<ImageOfProduct> Images { get; set; }
     }
 }
