@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternetShop", "InternetShop\InternetShop.csproj", "{1889E15D-0CF6-492B-862C-646B8F7A8332}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{1889E15D-0CF6-492B-862C-646B8F7A8332}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Handlers", "Handlers\Handlers.csproj", "{79A3A143-0823-47C6-85E4-551739628304}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{06B86134-36F7-49B6-8228-91671F31DA30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{06B86134-36F7-49B6-8228-91671F31DA30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{0B687A3A-1C57-44B7-8249-2F14F0C6C739}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{0B687A3A-1C57-44B7-8249-2F14F0C6C739}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
