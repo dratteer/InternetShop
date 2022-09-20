@@ -1,4 +1,6 @@
+using AutoMapper;
 using Core.Contexts;
+using Domain;
 using Handlers.Base;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +8,14 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+//Mapper
+builder.Services.AddTransient(provider => new MapperConfiguration(cfg =>
+{
+    cfg.AddProfile(provider.GetService<MappingsProfile>());
+}).CreateMapper());
+builder.Services.AddTransient<MappingsProfile, MappingsProfile>();
+
 
 // Mediator
 builder.Services.AddMediatR(typeof(RequestBase).Assembly);
